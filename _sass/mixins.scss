@@ -1,0 +1,9 @@
+@mixin transition($transition-property, $transition-time, $method) {
+    transition: $transition-property $transition-time $method;
+    -webkit-transition: $transition-property $transition-time $method;
+}
+
+@mixin font_size($size: 1.6) {
+    font-size: (($size)*16) + 0px;
+    font-size: $size + 0rem;
+}

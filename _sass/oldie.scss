@@ -1,0 +1,113 @@
+/*
+Theme Name: Barely WP
+Theme URI: http://austinsoffice.com/barely/
+Author: Austin Gregory
+Author URI: http://austinsoffice.org/
+Description: A barebones Wordpress theme designed to be built upon. Makes for a great theme foundation including a base Gruntfile, package.json, SCSS files ready to be customized, and more. 
+Version: 1.0
+*/
+
+/* 
+  These styles over-ride the main stylesheet if the browser is IE 8 or lower
+  I do this becuase the theme is built mobile first and IE8 doesn't support media queries
+*/
+
+// Imports for SASS components
+@import 'variables';
+@import 'mixins';
+
+.wrap, .gridly,
+.wrap .gridly {
+  *zoom: 1; }
+  .wrap:before, .gridly:before,
+  .wrap .gridly:before, .wrap:after, .gridly:after,
+  .wrap .gridly:after {
+    content: " ";
+    display: table; }
+  .wrap:after, .gridly:after,
+  .wrap .gridly:after {
+    clear: both; }
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+.wrap {
+  margin: 0 auto; }
+
+.wrap, .gridly,
+.wrap .gridly {
+  width: 100%; }
+
+[class*='tier-'] {
+  width: 100%;
+  float: left;
+  padding: 35px;
+  margin-bottom: 10px; 
+  [class*='tier-'] {
+    padding: 0; }}
+  [class*='tier-']:last-child {
+    margin-bottom: 0; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.pull-left {
+  float: left; }
+
+.push-right {
+  float: right; }
+
+.center-content-mobile {
+    text-align: center;
+}
+.center-content {
+  text-align: center; }
+  [class*='tier-'] {
+      [class*='tier-'] {
+        padding: 35px;}
+      [class*='tier-']:last-of-type {
+        padding-right: 0; }
+      [class*='tier-']:first-child {
+        padding-left: 0; }
+    margin-bottom: 0; }
+
+  .tier-1 {
+    width: 8.33333%; }
+
+  .tier-2 {
+    width: 16.66667%; }
+
+  .tier-3 {
+    width: 25%; }
+
+  .tier-4 {
+    width: 33.33333%; }
+
+  .tier-5 {
+    width: 41.66667%; }
+
+  .tier-6 {
+    width: 50%; }
+
+  .tier-7 {
+    width: 58.33333%; }
+
+  .tier-8 {
+    width: 66.66667%; }
+
+  .tier-9 {
+    width: 75%; }
+
+  .tier-10 {
+    width: 83.33333%; }
+
+  .tier-11 {
+    width: 91.66667%; }
+
+  .tier-12 {
+    width: 100%; }
+  .wrap {
+    max-width: 1400px; }

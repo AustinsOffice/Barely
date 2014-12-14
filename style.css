@@ -1,0 +1,233 @@
+/*
+Theme Name: Barely
+Theme URI: http://austinsoffice.com/barely
+Author: Austin Gregory
+Author URI: http://austinsoffice.org/
+Description: A theme built to be used as a foundation. Built for myself including the tools and such that I use including SASS, Grunt, and Gridly (a basic responsive, fluid grid).
+Version: 1.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+.wrap, .gridly,
+.wrap .gridly {
+  *zoom: 1; }
+  .wrap:before, .gridly:before,
+  .wrap .gridly:before, .wrap:after, .gridly:after,
+  .wrap .gridly:after {
+    content: " ";
+    display: table; }
+  .wrap:after, .gridly:after,
+  .wrap .gridly:after {
+    clear: both; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+.wrap {
+  margin: 0 auto; }
+
+.wrap, .gridly,
+.wrap .gridly {
+  width: 100%; }
+
+[class*='tier-'] {
+  width: 100%;
+  float: left;
+  padding: 20px;
+  margin-bottom: 20px; }
+  [class*='tier-']:last-child {
+    margin-bottom: 0; }
+  [class*='tier-'].no-gutter {
+    padding: 0; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0; }
+
+@media only screen and (min-width: 600px) {
+  [class*='tier-'] {
+    margin-bottom: 0; }
+
+  .tier-1 {
+    width: 8.33333%; }
+
+  .tier-2 {
+    width: 16.66667%; }
+
+  .tier-3 {
+    width: 25%; }
+
+  .tier-4 {
+    width: 33.33333%; }
+
+  .tier-5 {
+    width: 41.66667%; }
+
+  .tier-6 {
+    width: 50%; }
+
+  .tier-7 {
+    width: 58.33333%; }
+
+  .tier-8 {
+    width: 66.66667%; }
+
+  .tier-9 {
+    width: 75%; }
+
+  .tier-10 {
+    width: 83.33333%; }
+
+  .tier-11 {
+    width: 91.66667%; }
+
+  .tier-12 {
+    width: 100%; } }
+@media only screen and (min-width: 1180px) {
+  .wrap {
+    max-width: 1240px; }
+
+  .wrap-wide {
+    width: 100%; } }
+.pull-left {
+  float: left; }
+
+.push-right {
+  float: right; }
+
+html {
+  font-size: 100%; }
+
+body {
+  margin: 0;
+  font-family: "arial", sans-serif;
+  line-height: 1.4;
+  font-size: 19.2px;
+  font-size: 1.2rem; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #574d4d;
+  margin: 60px 0 10px; }
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #574d4d; }
+  h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+    margin: 0 0 10px; }
+
+h1 {
+  font-size: 38.4px;
+  font-size: 2.4rem; }
+
+h2 {
+  font-size: 35.2px;
+  font-size: 2.2rem; }
+
+h3 {
+  font-size: 32px;
+  font-size: 2rem; }
+
+h4 {
+  font-size: 28.8px;
+  font-size: 1.8rem; }
+
+h5 {
+  font-size: 25.6px;
+  font-size: 1.6rem; }
+
+h6 {
+  font-size: 22.4px;
+  font-size: 1.4rem; }
+
+p {
+  color: #574d4d; }
+
+a {
+  color: #f44730;
+  text-decoration: none; }
+  a:hover {
+    color: #f77260; }
+
+figure {
+  margin: 0; }
+  figure figcaption {
+    color: #807171;
+    font-size: 16px;
+    font-size: 1rem;
+    text-align: center; }
+
+#brand a {
+  text-decoration: none;
+  font-size: 56px;
+  font-size: 3.5rem; }
+
+#site-navigation ul {
+  list-style: none;
+  border: 1px solid #eee;
+  overflow: auto;
+  padding: 0; }
+  #site-navigation ul li {
+    display: block;
+    width: 50%;
+    float: left;
+    text-align: center; }
+    #site-navigation ul li:nth-child(odd) {
+      border-right: 1px solid #eee; }
+    @media only screen and (min-width: 750px) {
+      #site-navigation ul li {
+        width: 16.66667%; }
+        #site-navigation ul li:not(:last-child) {
+          border-right: 1px solid #eee; } }
+    #site-navigation ul li a {
+      text-decoration: none;
+      display: block;
+      color: #574d4d;
+      padding: 10px 0; }
+      #site-navigation ul li a:hover {
+        background: #eee;
+        color: #f44730; }
+
+article.post-list ul, article#the-post ul, article#the-page ul {
+  list-style: disc; }
+article.post-list {
+  margin-bottom: 10px; }
+  @media only screen and (min-width: 600px) {
+    article.post-list {
+      margin-bottom: 80px; } }
+  article.post-list h2.title {
+    margin: 0 0 10px; }
+article .article-meta {
+  font-style: italic;
+  color: #807171;
+  font-size: 17.6px;
+  font-size: 1.1rem; }
+
+.wp-caption {
+  max-width: 100%; }
+
+.sidebar h3, .sidebar h4, .sidebar h5, .sidebar h6 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  font-size: 1.5rem; }
+.sidebar .widget {
+  margin-bottom: 40px; }
+
+.footer {
+  text-align: center;
+  background: #eee;
+  padding-top: 20px; }
+  .footer ul {
+    list-style: none;
+    padding: 0; }
+    .footer ul li {
+      display: inline; }
+      .footer ul li:not(:last-child) {
+        margin-right: 15px; }
+
+.commentlist {
+  padding: 0;
+  list-style: none; }
+  .commentlist li {
+    margin-top: 40px; }
+  .commentlist ul {
+    border-left: 1px dotted #e5e5e5;
+    list-style: none; }

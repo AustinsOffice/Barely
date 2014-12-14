@@ -1,0 +1,32 @@
+// Gridly settings
+$grid_column_count: 12;
+$site_max_width: 1240px;
+$gutter: 20px;
+
+// Barely uses this to generate the css for the navigation bar and keep it fluid no matter the number of elements
+$site_navigation_items: 6; 
+
+
+//Colors
+// Dark color for copy and such
+$color_primary: #574d4d;
+
+//Light color for background and such
+$color_secondary: #f7f7f7;
+
+//Bright color for links, buttons, and such
+$color_accent: #f44730;
+
+//Color used for the footer background
+$color_footer: #eee;
+
+// Font
+$content_font: 'arial', sans-serif;
+
+
+//Breakpoints
+$break_small: "only screen and (min-width: 600px)";
+$break_medium: "only screen and (min-width: 900px)";
+$break_large: "only screen and (min-width: 1180px)";
+
+$break_nav: "only screen and (min-width: 750px)";

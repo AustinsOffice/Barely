@@ -1,0 +1,12 @@
+{
+  "name": "Barely",
+  "version": "1.0.0",
+  "author": "Austin Gregory",
+  "private": true,
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-autoprefixer": "^2.0.0",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-watch": "*"
+  }
+}

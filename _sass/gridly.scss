@@ -1,0 +1,54 @@
+// Declare styles for the base responsive, fluid grid
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.wrap {
+    margin: 0 auto;
+}
+
+.wrap, .gridly,
+.wrap .gridly {
+    width: 100%;
+    @extend %clearfix;
+}
+
+[class*='tier-'] {
+    width: 100%;
+    float: left;
+    padding: $gutter;
+    margin-bottom: $gutter;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &.no-gutter {
+        padding: 0;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+@media #{$break_small} {
+    // SASS to generate the column styles for Gridly
+    [class*='tier-'] {
+        margin-bottom: 0;
+    }
+    @for $i from 1 to ($grid_column_count+1) {
+        .tier-#{$i} {
+            width: 100% / $grid_column_count * $i;
+        }
+    }
+}
+    
+@media #{$break_large} {
+    .wrap { max-width: $site_max_width; }
+    .wrap-wide { width: 100%; }
+}
+
+// Utility classes
+.pull-left {float: left;}
+.push-right {float: right;}

@@ -1,0 +1,161 @@
+/*
+Theme Name: Barely
+Theme URI: http://austinsoffice.com/barely
+Author: Austin Gregory
+Author URI: http://austinsoffice.org/
+Description: A theme built to be used as a foundation. Built for myself including the tools and such that I use including SASS, Grunt, and Gridly (a basic responsive, fluid grid).
+Version: 1.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+// Import other SCSS modules
+@import 'variables'; // Universal values and such
+@import 'mixins'; // Basic things like transitions and font-size for IE fall-back (rem - px)
+@import 'extends'; // Includes a clearfix
+@import 'gridly'; // Contains all of the stuff for building the responsive, fluid grid
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: $content_font;
+    line-height: 1.4;
+    @include font_size(1.2);
+}
+
+// Copy styles
+h1,h2,h3,h4,h5,h6 {
+    color: $color_primary;
+    margin: 60px 0 10px;
+    a { color: $color_primary; }
+    &:first-child { margin: 0 0 10px; }
+}
+
+h1 { @include font-size(2.4); }
+h2 { @include font-size(2.2); }
+h3 { @include font-size(2); }
+h4 { @include font-size(1.8); }
+h5 { @include font-size(1.6); }
+h6 { @include font-size(1.4); }
+
+p { color: $color_primary; }
+
+a {
+    color: $color_accent;
+    text-decoration: none;
+    &:hover { color: lighten($color_accent, 10%); }
+}
+
+figure { 
+    margin: 0; 
+    figcaption {
+        color: lighten($color_primary, 15%);
+        @include font_size(1);
+        text-align: center;
+    }
+}
+
+#brand {
+    a { 
+        text-decoration: none; 
+        @include font_size(3.5); 
+    }
+}
+
+#site-navigation {
+    ul {
+        list-style: none;
+        border: 1px solid #eee;
+        overflow: auto;
+        padding: 0;
+        li {
+            display: block;
+            width: 50%;
+            float: left;
+            text-align: center;
+            &:nth-child(odd) {
+                border-right: 1px solid #eee;
+            }
+            @media #{$break_nav} {
+                width: 100/$site_navigation_items + 0%;
+                &:not(:last-child) {
+                    border-right: 1px solid #eee;
+                }
+            }
+            a {
+                &:hover {
+                    background: #eee;
+                    color: $color_accent;
+                }
+                text-decoration: none;
+                display: block;
+                color: $color_primary;
+                padding: 10px 0;
+            }
+        }
+    }   
+}
+
+article {
+    &.post-list,&#the-post,&#the-page {
+        ul {
+            list-style:disc;
+        }
+    }
+    
+    &.post-list {
+        margin-bottom: 10px;
+        @media #{$break_small} {
+            margin-bottom: 80px;
+        }
+        h2.title { margin: 0 0 10px; }
+    }
+
+    .article-meta {
+        font-style: italic;
+        color: lighten($color_primary, 15%);
+        @include font_size(1.1);
+    }
+}
+
+.wp-caption {
+    max-width: 100%;
+}
+
+.sidebar {
+    h3,h4,h5,h6 {
+        margin: 0 0 10px;
+        @include font_size(1.5);
+    }
+    
+    .widget { margin-bottom: 40px; }
+}
+
+.footer {
+    text-align: center;
+    background: $color_footer;
+    padding-top: $gutter;
+    ul {
+        list-style: none;
+        padding: 0;
+        li {
+            display: inline;
+            &:not(:last-child) { margin-right: 15px; }
+        }
+    }
+}
+
+.commentlist {
+    padding: 0;
+    list-style: none;
+    li {
+        margin-top: 40px;
+    }
+    ul {
+        border-left: 1px dotted #e5e5e5;
+        list-style: none;
+    }
+}
