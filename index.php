@@ -3,7 +3,9 @@
                 <main class="tier-8">  
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                         <article class="post-list">
-                            <h2 class="title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+                            <h2 class="title">
+                                <a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+                            </h2>
                             <div class="article-meta">
                                 <time datetime="<?php the_time('c')?>"><?php echo 'Posted on ' . get_the_date(); ?></time> 
                                 by <?php the_author_posts_link(); ?> 

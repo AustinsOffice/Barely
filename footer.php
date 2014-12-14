@@ -5,7 +5,7 @@
                 <div class="tier-12 footnote no-gutter">
                     <ul>
                         <li><a href="#">RSS</a></li>
-                    <li><a href="#">Contact</a></li>
+                        <li><a href="#">Contact</a></li>
                         <li><a href="#">Stuff!</a></li>
                     </ul>
                 </div>
