@@ -9,4 +9,4 @@ Demo
 =====
 
 Check out the theme demo on AustinsOffice.com:
-[The Demo](www.austinsoffice.com/demos/barely/)
+[The Demo](http://www.austinsoffice.com/demos/barely/)
