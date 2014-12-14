@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width">
         <meta charset="<?php bloginfo( 'charset' ); ?>">
-        <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
+        <title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
         <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen">
         <link rel="profile" href="http://gmpg.org/xfn/11">
         <!--[if lt IE 9]>
