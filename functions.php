@@ -1,7 +1,7 @@
 <?php
 
+// Create a widgitized sidebar
 function init_widget_areas() {
-
 	register_sidebar( array(
 		'name' => 'Main sidebar',
 		'id' => 'main_sidebar',
@@ -11,6 +11,7 @@ function init_widget_areas() {
 		'after_title' => '</h3>',
 	) );
 }
+
 add_action( 'widgets_init', 'init_widget_areas' );
 
 // Register a navigation menu
